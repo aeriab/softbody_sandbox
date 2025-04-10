@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgtwupcsn6843"]
+
+[ext_resource type="Script" uid="uid://b1o68qiyqsp46" path="res://CustomPhysicsTesting/jelly_body_2d.gd" id="1_5pnwk"]
+
+[node name="CustomPhysics" type="Node2D"]
+
+[node name="JellyBody2D" type="Node2D" parent="."]
+script = ExtResource("1_5pnwk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.2, 0.2)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-1280, -33408)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-56919, 5862, -1111, 34022, 27433, 38374, 63529, 18662, 65065, 45414, 19625, 52454, -48855, 32486)
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-56919, 5862, -1111, 34022, 27433, 38374, 63529, 18662, 65065, 45414, 19625, 52454, -48855, 32486)
